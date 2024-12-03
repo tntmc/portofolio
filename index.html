@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/ProjectWeb3/assets/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="/ProjectWeb3/assets/images/logo_2-removebg-preview.png">
+  <title>My Portofolio | Sean Finoe</title>
+</head>
+<body>
+  <header class="header" id="home">
+    <nav class="navbar">
+      <img src="/ProjectWeb3/assets/images/logo_2-removebg-preview.png", class="logo" alt="logo" width="200px">
+      <ul id="list">
+        <li><a href="#home">Home</a>
+        <li><a href="#about">About</a>
+        <li><a href="#project">Project</a>
+        <li><a href="#Contact">Contact</a>
+        <li><a href="https://seanfinoe.blogspot.com/">Blog</a>
+      </ul>
+      <img src="/ProjectWeb3/assets/images/menu-regular-24.png" class="menu" alt="menu" width="40px" onclick="toggleMenu()">
+    </nav>
+    <div class="hero">
+      <img src="/ProjectWeb3/assets/images/output-onlinegiftools.gif" class="imagehero" alt="imagehero">
+      <h2>Hello !</h2>
+      <h1>Im Sean Finoe</h1>
+      <h2><span id="profesi"></span></h2>
+      <p>With 1 year in web developing experience, <br>2 years in linux debian, and networking experience</p>
+      <div class="more">
+        <!--
+          <a href="" class="CV">Download my CV</a>
+        -->
+      <a href=""><i class='bx bxl-linkedin'></i></a>
+      <a href=""><i class='bx bxl-github'></i></a>
+      <a href=""><i class='bx bxl-instagram-alt'></i></a>
+      <a href=""><i class='bx bxl-facebook'></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section class="container1">
+    <div class="About" id="about">
+
+    <main class="maincontainer">
+      <div class="content1">
+        <div class="content1_text">
+          <h1>Profile</h1>
+          <p> am a student at SMKN 1 Mojokerto, majoring in TJKT or computer engineer,with expertise in web dev, Linux debian and networking skills</p>
+        </div>
+      </div>
+
+      <div class="content2">
+        <div class="content2_text">
+          <h1>My Skills</h1>
+          <ul>
+            <li>Make a website with HTML, CSS, and JavaScript</li>
+            <li>Understand linux basic - advanced command</li>
+            <li>Understand how to config a network</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content3">
+        <div class="content3_text">
+          <h1>Certification</h1>
+          <p>This is list from my certification</p>
+          <a href="#"><i class='bx bx-folder'></i>Linux</a>
+          <a href="#"><i class='bx bx-folder'></i>Programming</a>
+          <a href="#"><i class='bx bx-folder'></i>Webinar</a>
+          <a href="#"><i class='bx bx-folder'></i>Competition</a>
+        </div>
+      </div>
+
+      <div class="content4">
+        <div class="content4_text">
+          <h1>Experience</h1>
+          <ul>
+            <li>1 year in web developing 2023 - 2024</li>
+            <li>2 years in linux debian 2022 - 2024 </li>
+            <li>1 year in mikrotik 2023 - 2024</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    </div>
+  </section>
+
+  <section class="container2">
+    <div class="Project" id="project">
+      <h1>Project</h1>
+    </div>
+  </section>
+
+  <section class="container3">
+    <div class="Contact" id="contact">
+      <h1>Contact</h1>
+    </div>
+  </section>
+
+
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+<script>
+  let list = document.getElementById("list");
+  list.style.maxHeight = "0px";
+
+  function toggleMenu(){
+    if(list.style.maxHeight == "0px"){
+      list.style.maxHeight = "270px";
+    } else {
+      list.style.maxHeight = "0px";
+    }
+  }
+</script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#profesi', {
+    strings: ['An Junior Web Dev', 'And', 'CS student'],
+    typeSpeed: 120,
+    loop: true
+  });
+</script>
+
+</body>
+</html>
